@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common_css</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common_style.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- INPUT -->
+        <div class="outter--input" style="width: 200px;">
+            <div class="inner--input">
+                <input type="text" class="input--text" />
+            </div>
+        </div>
+        <!-- focus -->
+        <div class="outter--input" style="width: 200px; margin-top: 10px;">
+            <div class="inner--input focus in">
+                <input type="text" class="input--text" />
+            </div>
+        </div>
+        <!-- label -->
+        <div class="outter--input" style="width: 200px; margin-top: 10px;">
+            <label for="sample_id" class="label--text">라벨</label>
+            <div class="inner--input">
+                <input type="text" class="input--text" id="sample_id"/>
+            </div>
+        </div>
+        <!-- disabled -->
+        <div class="outter--input" style="width: 200px; margin-top: 10px;">
+            <div class="inner--input">
+                <input type="text" class="input--text" disabled/>
+            </div>
+        </div>
+        <!-- error -->
+        <div class="outter--input error" style="width: 200px; margin-top: 10px;">
+            <div class="inner--input">
+                <input type="text" class="input--text"/>
+            </div>
+        </div>
+        <!-- success -->
+        <div class="outter--input success" style="width: 200px; margin-top: 10px;">
+            <div class="inner--input">
+                <input type="text" class="input--text"/>
+            </div>
+        </div>
+        <!-- caption -->
+        <div class="outter--input caption" style="width: 200px; margin-top: 10px;">
+            <div class="inner--input">
+                <input type="text" class="input--text" />
+            </div>
+            <p class="text--caption">내용을 입력하세요</p>
+        </div>
+        <!-- inner icon -->
+        <div class="outter--input" style="width: 200px; margin-top: 10px;">
+            <div class="inner--image"></div>
+            <div class="inner--input left--img">
+                <input type="text" class="input--text" />
+            </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="container--wrap" style="margin-top: 30px;">
+            <button type="button" class="btn">버튼</button>
+            <!-- shadow -->
+            <button type="button" class="btn shadow" style="margin-top: 10px;">버튼</button>
+            <!-- disabled -->
+            <button type="button" class="btn" style="margin-top: 10px;" disabled>버튼</button>
+            <!-- color_change -->
+            <button type="button" class="btn color--blue" style="margin-top: 10px;">버튼</button>
+            <button type="button" class="btn color--lightB" style="margin-top: 10px;">버튼</button>
+            <!-- big btn -->
+            <button type="button" class="btn color--blue big" style="margin-top:10px">버튼</button>
+        </div>
+    </div>
+    
+</body>
+<!-- <script>
+    $('.inner--input.focus').on('focusin',function(){
+        $(this).addClass("in");
+    })
+</script> -->
+</html>

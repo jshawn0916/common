@@ -1,0 +1,112 @@
+.container{
+    width: 750px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+}
+/* INPUT */
+.outter--input{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.outter--input .inner--input{
+    position: relative;
+    border:1px solid #bbb;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    align-items: center;
+    flex: 1;
+}
+.outter--input .label--text{
+    margin-right: 10px;
+}
+.inner--input .input--text{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+.inner--input.focus.in{
+    border: 1px solid #51A7E8;
+    box-shadow: 0px 1px 4px rgba(81, 167, 232,.5);
+}
+.inner--input .input--text:disabled{
+    background: #eee;
+}
+.outter--input.error .inner--input{
+    border: 1px solid #D43433;
+}
+.outter--input.success .inner--input{
+    border: 1px solid #57B559;
+}
+.outter--input.caption{
+    align-items: normal;
+    flex-flow: column;
+}
+.outter--input.caption .text--caption{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.inner--image{
+    width: 20px;
+    height: 20px;
+    background: #dfdfdf;
+    position: absolute;
+    left: 8px;
+    z-index: 1;
+}
+.inner--input.left--img{
+    padding-left: 28px;
+}
+
+/* BUTTON */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    padding:0 8px;
+    height: 40px;
+    border: 1.5px solid #bbb;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700; 
+}
+.btn.shadow{
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+.btn:hover{
+    background: rgba(0, 0, 0, .075);
+  
+}
+.btn:active{
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .15);
+}
+.btn:disabled{
+    background: #eee;
+    cursor: auto;
+}
+.btn.color--blue{
+    border:1px solid #004AA2;
+    color: #004AA2;
+}
+.btn.color--blue:hover{
+    background: #004AA2;
+    color: #fff;
+}
+.btn.color--lightB{
+    border: 1px solid #6F9AD3;
+    color: #6F9AD3;
+}
+.btn.color--lightB:hover{
+    background: #6F9AD3;
+    color: #fff;
+}
+.btn.big{
+    width: 100%;
+    justify-content: center;
+}
